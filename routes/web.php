@@ -63,6 +63,10 @@ Route::get('/roomA1','assigned_roomController@showRequest_and_AssignedClass');
 
 Auth::routes();
 
+
+Route::get('/building/create', 'BuildingController@create')->name('building.create');
+Route::post('/building/store', 'BuildingController@store')->name('building.store');
+
 // Route::get('/home', 'HomeController@index')->name('home');
 
 
